@@ -47,6 +47,9 @@ learning-CUDA/
 4. 代码风格不限，但需保持一致；
 5. 需进行**适当**的代码注释解释重要部分；
 
+### 提交方式
+在网站 [InfiniTensor 开源社区](https://beta.infinitensor.com/camp/summer2025) 上提交 GitHub 链接，以最新提交为准。
+
 ## 🛠️ 编译与运行
 
   代码编译与运行可以使用提供的 `Makefile` 十分简便的实现。
