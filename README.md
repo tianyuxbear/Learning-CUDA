@@ -37,7 +37,7 @@ learning-CUDA/
   
 2. **flashAttention**
 
-实现 Flash Attention 算子。需支持 causal masking 和 GQA。具体行为与 [torch.nn.functional.scaled_dot_product_attention](https://docs.pytorch.org/docs/stable/generated/torch.nn.functional.scaled_dot_product_attention.html) 保持一致。接口未提供的参数所代表的功能无需支持和实现。该函数需支持 float。
+实现 Flash Attention 算子。需支持 causal masking 和 GQA。具体行为与 [torch.nn.functional.scaled_dot_product_attention](https://docs.pytorch.org/docs/stable/generated/torch.nn.functional.scaled_dot_product_attention.html) 保持一致。接口未提供的参数所代表的功能无需支持和实现。具体参数要求请参考文件中的注释。该函数需支持 float。
 
 ### 注意事项
 
@@ -62,6 +62,25 @@ learning-CUDA/
 #### 构建并运行测试（verbose 模式）
 
 直接在命令行使用 `make VERBOSE=true` 指令编译代码并执行测试，输出包括执行时间在内的结果。
+
+## 📊 评分规则
+
+本次作业的评分标准如下：
+
+1. **正确性优先**  
+   - 所有提交首先以正确性为前提，需在提供的测试用例中正确输出结果；
+   - 正确性提供基础分：每通过一个测例，获得相应的基础得分；
+   - 未通过的测试用例，不计入性能排名；
+   - 不符合**注意事项**中要求的，不得分。
+
+2. **性能加分**  
+   - 在正确性的基础上，会对各实现的性能进行排名；
+   - 性能越优，获得的额外分数越多；
+   - 性能评判将在提供的服务器上进行，因此请在服务器上进行性能评估。
+
+3. **最终成绩**  
+   - 总体得分由「通过的测试用例数量」与「性能排名加分」共同决定。  
+   - 各测试用例的分数相加，形成最终成绩。  
 
 ## 📬 有疑问?
 
